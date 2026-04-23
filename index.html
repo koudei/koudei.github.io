@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism - Professional Audio Routing for macOS</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1d1d1f;
+            --accent-color: #0066cc;
+            --border-color: #d2d2d7;
+            --secondary-text: #6e6e73;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 24px;
+            color: var(--secondary-text);
+            margin-bottom: 30px;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 80px 0;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: var(--secondary-text);
+        }
+
+        /* Footer Links */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+            color: var(--secondary-text);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000000;
+                --text-color: #f5f5f7;
+                --border-color: #333333;
+            }
+            .hero { background: linear-gradient(180deg, #1c1c1e 0%, #000000 100%); }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" class="app-icon" style="margin: 0 auto;"></div>
+        <h1>Prism</h1>
+        <p class="tagline">Core Audioの限界を超える、自由なルーティングを。</p>
+    </div>
+</section>
+
+<div class="container">
+    <section class="features">
+        <div class="feature-card">
+            <h3>低遅延エンジニアリング</h3>
+            <p>Core Audioの深層で動作し、リアルタイム性が求められるプロフェッショナルの現場でも耐えうる極限のパフォーマンスを提供します。</p>
+        </div>
+        <div class="feature-card">
+            <h3>直感的なマトリクスUI</h3>
+            <p>複雑な結線も、シンプルで美しいマトリクス画面で一目瞭然。ドラッグ＆ドロップで自在なオーディオパスを構築できます。</p>
+        </div>
+        <div class="feature-card">
+            <h3>徹底したプライバシー</h3>
+            <p>音声を処理するのはあなたのMacだけ。外部サーバーへの送信や、データの収集は一切行いません。</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Kai Nishimuro. Built in Hokkaido.</p>
+        <nav>
+            <a href="eula.html">利用規約 (EULA)</a>
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="mailto:support@example.com">サポート</a>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
